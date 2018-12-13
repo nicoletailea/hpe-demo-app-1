@@ -40,6 +40,16 @@ public class BandTest {
     }
 
     @Test
+    public void bandTestA11() {
+        try {
+            Band band = new Band(null);
+            Assert.fail("the flow MUST have been fallen before");
+        } catch (Exception e) {
+            Assert.assertEquals(e.getClass(), NullPointerException.class);
+        }
+    }
+
+    @Test
     public void bandTestA1() {
         try {
             Band band = new Band(null);
