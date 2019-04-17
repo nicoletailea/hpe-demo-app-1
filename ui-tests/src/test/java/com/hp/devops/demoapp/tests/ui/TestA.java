@@ -31,7 +31,7 @@ public class TestA {
     static private boolean isBehindProxy = false;
     static private String testProxy;
     static private String appUrl;
-
+//comment
     @BeforeClass
     static public void beforeAll() {
 
