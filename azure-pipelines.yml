@@ -12,7 +12,7 @@ pool:
 steps:
 - task: build-task@1
   inputs:
-    OctaneService: 'Octane'
+    OctaneService: 'Evgeny'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
