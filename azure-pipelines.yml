@@ -1,4 +1,5 @@
 # Maven
+
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
@@ -10,9 +11,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: build-task@1
-  inputs:
-    OctaneService: 'Evgeny'
+# - task: build-task@1
+#   inputs:
+#     OctaneService: 'Evgeny'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -23,3 +24,8 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    mergeTestResults: true
