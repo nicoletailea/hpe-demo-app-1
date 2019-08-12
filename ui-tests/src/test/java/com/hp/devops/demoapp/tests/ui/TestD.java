@@ -13,6 +13,5 @@ public class TestD {
 	public void testUIcaseAlwaysPass() {
 		System.out.println("Proudly running test " + Thread.currentThread().getStackTrace()[1]);
 		Assert.assertTrue(true);
-//		lgfjsdlfkgjdlg
 	}
 }

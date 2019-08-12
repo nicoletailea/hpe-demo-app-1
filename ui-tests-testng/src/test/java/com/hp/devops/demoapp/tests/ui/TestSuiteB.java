@@ -46,8 +46,8 @@ public class TestSuiteB {
             appUrl = autHost + ":" + autPort;
         }
         else {
-            proxyHost = "";
-            proxyPort = "";
+            proxyHost =  "";
+            proxyPort =  "";
             autHost = "http://myd-vm02771.hpswlabs.adapps.hp.com";
             autPort = "8080";
             appUrl = autHost + ":" + autPort + "/jenkins";
