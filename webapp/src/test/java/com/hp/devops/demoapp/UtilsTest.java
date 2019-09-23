@@ -27,6 +27,12 @@ public class UtilsTest {
 	}
 
 	@Test
+	public void testWithVeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeryLoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooongNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaame() {
+		String[] result = Utils.nodify("");
+		assertEquals(result.length, 0);         //  0 is the right answer
+	}
+
+	@Test
 	public void nodifyTestC() {
 		String[] result = Utils.nodify("/api");
 		assertEquals(result.length, 0);
