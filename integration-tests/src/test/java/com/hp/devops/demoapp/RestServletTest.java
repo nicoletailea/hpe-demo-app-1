@@ -62,7 +62,12 @@ public class RestServletTest {
 	public void testReloadDb() throws Exception {
 		spec.log().all().expect().statusCode(200).contentType(ContentType.TEXT).body(equalTo("done")).get("/reloadDB");
 	}
-
+	
+	@Test
+	public void testWithVeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeryLoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooongNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaame(){
+		System.out.println("This is a test with a very long name");	
+	}
+	
 	@Test
 	public void testVoteForBand() throws Exception {
 		String response1 = spec.log().all().expect().statusCode(200).when().put("/band/1/vote").asString();
