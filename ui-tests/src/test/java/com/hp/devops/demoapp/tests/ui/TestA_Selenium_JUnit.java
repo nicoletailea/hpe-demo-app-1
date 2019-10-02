@@ -45,6 +45,11 @@ public class TestA_Selenium_JUnit {
         }
         Assert.assertEquals(query.isDisplayed(), true);
     }
+    
+    @Test
+    public void testLongName_1_0123456789_2_0123456789_3_0123456789_4_0123456789_5_0123456789_6_0123456789_7_0123456789_8_0123456789_9_0123456789_10_0123456789_11_0123456789_12_0123456789_13_0123456789_14_0123456789_15_0123456789_16_0123456789_17_0123456789_18_0123456789_19_0123456789_20_0123456789() {
+        Assert.assertTrue(true);
+    }
 
     @Category(SpecialTests.class)
     @Test
