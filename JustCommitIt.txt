@@ -3,3 +3,4 @@ rikicommit2
 rikicommit3
 rikicommit4
 rikicommit5
+rikicommit6
