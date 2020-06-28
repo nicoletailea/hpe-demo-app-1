@@ -33,3 +33,4 @@ Beta 2.6.7
 
 riki1002
 tested and verified 
+iyuui
