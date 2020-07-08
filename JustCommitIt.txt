@@ -21,3 +21,4 @@ Riki
 test
 test1
 defect #1002
+defect #1002
