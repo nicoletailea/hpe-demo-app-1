@@ -28,3 +28,4 @@ test1
 test2
 sadasd
 sadsads
+defect #1002
