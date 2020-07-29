@@ -8,3 +8,4 @@ tested
 cxvxvcx
 cxvxc
 fgdfg
+defect #1002
