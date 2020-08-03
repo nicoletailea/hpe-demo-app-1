@@ -18,3 +18,4 @@ Riki1
 cxvcxvcx
 xvcvcv
 user story #1003
+defect #1002
