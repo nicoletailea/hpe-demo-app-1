@@ -28,3 +28,24 @@ defect #1002
 defect
 defect #2001
 defect #2001
+10/08/2020 13:50:36,579 ERROR [BuildLogsPushWorker-318                           ] LogsServiceImpl                 : [http://myd-hvm03218.swinfra.net:30155?p=1001] permanent error on 'FolderJob/job/hpe-demo-app-riki #134', root job : FolderJob/job/hpe-demo-app-riki, passing over
+com.hp.octane.integrations.exceptions.PermanentException: preflight request failed with status 404. JobId: 'FolderJob%2Fjob%2Fhpe-demo-app-riki'. Request URL : http://myd-hvm03218.swinfra.net:30155/internal-api/shared_spaces/1001/analytics/ci/servers/9ec0b2c9-4325-4281-adbc-1d83c49668b9/jobs/FolderJob%2Fjob%2Fhpe-demo-app-riki/workspaceId?rootJobId=FolderJob%2Fjob%2Fhpe-demo-app-riki
+	at com.hp.octane.integrations.services.logs.LogsServiceImpl.preflightRequest(LogsServiceImpl.java:246) ~[integrations-sdk-2.6.4.21.jar:?]
+	at com.hp.octane.integrations.services.logs.LogsServiceImpl.pushBuildLog(LogsServiceImpl.java:157) ~[integrations-sdk-2.6.4.21.jar:?]
+	at com.hp.octane.integrations.services.logs.LogsServiceImpl.worker(LogsServiceImpl.java:131) ~[integrations-sdk-2.6.4.21.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_144]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
+10/08/2020 13:50:36,695 INFO  [AbridgedConnectivityWorker-564                    ] OctaneRestClientImpl            : [https://myd-hvm01967.swinfra.net:8446?p=1001] initial login
+10/08/2020 13:50:36,703 ERROR [AbridgedConnectivityWorker-379146                 ] BridgeServiceImpl               : [http://myd-vma00969.swinfra.net:8081?p=1002] Connection to Octane failed: 404, validate proxy settings, maybe missing 'No Proxy Host' setting?. Breathing 30 secs.
+10/08/2020 13:50:36,795 WARN  [AbridgedConnectivityWorker-564                    ] OctaneRestClientImpl            : [https://myd-hvm01967.swinfra.net:8446?p=1001] failed to login; response status: 401
+10/08/2020 13:50:36,795 ERROR [AbridgedConnectivityWorker-564                    ] OctaneRestClientImpl            : [https://myd-hvm01967.swinfra.net:8446?p=1001] failed on initial login, status 401
+10/08/2020 13:50:36,796 ERROR [AbridgedConnectivityWorker-564                    ] BridgeServiceImpl               : [https://myd-hvm01967.swinfra.net:8446?p=1001] Connection to Octane failed: authentication error.. Breathing 30 secs.
+10/08/2020 13:50:36,803 INFO  [TestsResultPushWorker-304                         ] TestsServiceImpl                : [http://myd-vm06116.myd.swinfra.net:8081?p=1001] test results preflight 'FolderJob/job/hpe-demo-app-riki #134', root job : FolderJob/job/hpe-demo-app-riki = false
+10/08/2020 13:50:36,840 ERROR [TestsResultPushWorker-247                         ] TestsServiceImpl                : [http://myd-vma00969.swinfra.net:8081?p=1001] permanent error on 'FolderJob/job/hpe-demo-app-riki #134', root job : FolderJob/job/hpe-demo-app-riki, passing over
+com.hp.octane.integrations.exceptions.PermanentException: preflight request failed with status 404. JobId: 'FolderJob/job/hpe-demo-app-riki'. Request URL : http://myd-vma00969.swinfra.net:8081/internal-api/shared_spaces/1001/analytics/ci/servers/4c542028-8373-4986-8c35-8e81d066ec34/jobs/FolderJob%2Fjob%2Fhpe-demo-app-riki/tests-result-preflight?rootJobId=FolderJob%2Fjob%2Fhpe-demo-app-riki
+	at com.hp.octane.integrations.services.tests.TestsServiceImpl.isTestsResultRelevant(TestsServiceImpl.java:145) ~[integrations-sdk-2.6.4.21.jar:?]
+	at com.hp.octane.integrations.services.tests.TestsServiceImpl.doPreflightAndPushTestResult(TestsServiceImpl.java:293) ~[integrations-sdk-2.6.4.21.jar:?]
+	at com.hp.octane.integrations.services.tests.TestsServiceImpl.worker(TestsServiceImpl.java:262) ~[integrations-sdk-2.6.4.21.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_144]
